@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pie-charts/static/css/main.016d4f28.css",
+    "main.js": "/pie-charts/static/js/main.1b02bdeb.js",
+    "index.html": "/pie-charts/index.html",
+    "main.016d4f28.css.map": "/pie-charts/static/css/main.016d4f28.css.map",
+    "main.1b02bdeb.js.map": "/pie-charts/static/js/main.1b02bdeb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.016d4f28.css",
+    "static/js/main.1b02bdeb.js"
+  ]
+}

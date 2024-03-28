@@ -86,7 +86,7 @@ export const Echarts = ({ colors }) => {
         <>
             <ReactECharts
                 option={option}
-                style={{ height: 400 }}
+                style={{ height: 310, width: 400 }}
                 onChartReady={onChartReady}
                 onEvents={{
                     click: onChartClick,

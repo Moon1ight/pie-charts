@@ -35,7 +35,7 @@ body {
 .chart-item {
   /* flex: 1; */
   /* max-height: 400px; */
-  width: 400px;
+  /* width: 400px; */
 }
 .chart-info {
   position: relative;
@@ -130,46 +130,42 @@ body {
 
 
 /* Медиа-запросы */
-
+@media (min-width: 1536px) {
+  .chart-item {
+    width: 400px;
+  }
+}
 @media (max-width: 1536px) {
-  .charts-container {
-
+  .chart-item {
+    width: 400px;
   }
   .chart {
       width: 1366px;
   }
 }
 @media (max-width: 1366px) {
-  .charts-container {
-
-  }
   .chart {
       width: 1280px;
   }
 }
 @media (max-width: 1280px) {
-  .charts-container {
-
-  }
   .chart {
       width: 1024px;
   }
 }
 @media (max-width: 1024px) {
-  .charts-container {
-
+  .chart-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .chart {
       width: 768px;
       flex-direction: column;
       height: auto;
-      /* height: 800px; */
   }
 }
 @media (max-width: 768px) {
-  .charts-container {
-
-  }
   .chart {
       width: 640px;
   }
@@ -183,10 +179,17 @@ body {
   }
 }
 @media (max-width: 475px) {
-  .charts-container {
-
-  }
   .chart {
       width: 350px;
+  }
+  .chart-item {
+    width: auto;
+  }
+  .chart-info-header {
+    flex-wrap: wrap;
+  }
+  .chart-info-header .title {
+    flex-wrap: wrap;
+    margin-bottom: 10px;
   }
 }

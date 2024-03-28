@@ -12,6 +12,7 @@ const data = [
 export const Victory = ({ colors }) => {
     return (
         <VictoryPie
+            height={300}
             data={data}
             colorScale={colors}
             sortKey='y'

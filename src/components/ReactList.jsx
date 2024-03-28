@@ -31,6 +31,7 @@ const ReactList = () => {
                 "Небольшой размер библиотеки",
             ],
             disadventages: [],
+            githubExample: "https://github.com/Moon1ight/pie-charts/blob/main/src/components/Echarts.jsx",
         },
         {
             component: <Nivo colors={COLORS} />,
@@ -50,6 +51,7 @@ const ReactList = () => {
                 "Есть встроенная сортировка",
             ],
             disadventages: ["Некоторые сложности в настройке"],
+            githubExample: "https://github.com/Moon1ight/pie-charts/blob/main/src/components/Nivo.jsx",
         },
         {
             component: <ApexCharts colors={COLORS} />,
@@ -65,6 +67,7 @@ const ReactList = () => {
             ],
             adventages: ["Есть возможность сделать сегменты градиентом", "Интерактивность легенды", "Вывод суммы значений в центре"],
             disadventages: ["Минусы"],
+            githubExample: "https://github.com/Moon1ight/pie-charts/blob/main/src/components/ApexCharts.jsx",
         },
         {
             component: <Recharts colors={COLORS} />,
@@ -80,6 +83,7 @@ const ReactList = () => {
             ],
             adventages: ["Достаточно просто сделать кастомные подсказки"],
             disadventages: ["Кастомизация весьма ограничена, приходится задавать собственные стили"],
+            githubExample: "https://github.com/Moon1ight/pie-charts/blob/main/src/components/Recharts.jsx",
         },
         {
             component: <ReactChartjsTwo colors={COLORS} />,
@@ -99,6 +103,7 @@ const ReactList = () => {
                 "Неудобный формат данных",
                 "Хоть и упрощает интеграцию Chart.js, может ограничить расширенную настройку. (для более сложных визуальных решений) ",
             ],
+            githubExample: "https://github.com/Moon1ight/pie-charts/blob/main/src/components/ReactChartjsTwo.jsx",
         },
         {
             component: <Victory colors={COLORS} />,
@@ -114,6 +119,7 @@ const ReactList = () => {
             ],
             adventages: ["Есть встроенная сортировка при указании «sortKey='y' sortOrder='y'>»"],
             disadventages: ["Ограниченная кастомизация", "Неудобный формат данных"],
+            githubExample: "https://github.com/Moon1ight/pie-charts/blob/main/src/components/Victory.jsx",
         },
         {
             component: <Plotly colors={COLORS} />,
@@ -129,6 +135,7 @@ const ReactList = () => {
             ],
             adventages: ["Преимуществ замечено не было"],
             disadventages: ["Неудобный формат данных", "Ограниченная кастомизация"],
+            githubExample: "https://github.com/Moon1ight/pie-charts/blob/main/src/components/Plotly.jsx",
         },
     ]
 
@@ -180,7 +187,7 @@ const ReactList = () => {
                             {!item.disadventages?.length > 0 && <div>Недостатков не обнаружено</div>}
                         </div>
                         <div className='github-link'>
-                            <a className='chart-link' href='#' rel='noopener noreferrer' target='_blank'>
+                            <a className='chart-link' href={item.githubExample} rel='noopener noreferrer' target='_blank'>
                                 Ссылка на пример кода
                             </a>
                         </div>

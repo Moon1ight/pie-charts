@@ -17,20 +17,22 @@ const ReactList = () => {
             title: "Echarts-for-react",
             installHref: "https://www.npmjs.com/package/echarts-for-react",
             librarySize: "7.93KB (2.82KB zipped)",
-            techStack: "React, JavaScript",
+            techStack: "React, Angular, Vue, JavaScript",
             libraryCriteria: [
                 { title: "Визуализация пай-чарт", value: true },
                 { title: "Open-source", value: true },
                 { title: "Дизайн в объемном стиле", value: true },
-                { title: "Анимации / активный пай-чарт", value: true },
+                { title: "Анимации", value: true },
+                { title: "Активный пай-чарт", value: true },
             ],
             adventages: [
-                "Очень гибкая кастомизация",
-                "Сразу выглядит приятно",
+                "Очень гибкая кастомизация (Можно подробно настроить вид диаграммы, ее подписей, полей при наведении/клике на них)",
+                "При установке сразу выглядит приятно",
                 "Интерактивность диаграммы и легенды",
+                "Показывает процентное соотношение",
                 "Для отрисовки может использовать и SVG и Canvas",
             ],
-            disadventages: [],
+            disadventages: ["Недостатков не обнаружено"],
             githubExample: "https://github.com/Moon1ight/pie-charts/blob/main/src/components/Echarts.jsx",
         },
         {
@@ -43,14 +45,16 @@ const ReactList = () => {
                 { title: "Визуализация пай-чарт", value: true },
                 { title: "Open-source", value: true },
                 { title: "Дизайн в объемном стиле", value: false },
-                { title: "Анимации / активный пай-чарт", value: true },
+                { title: "Анимации", value: true },
+                { title: "Активный пай-чарт", value: false },
             ],
             adventages: [
-                "Гибкая кастомизация",
+                "Гибкая кастомизация (Доступно множество параметров, от цвета и ширины границы поля, до активного поля диаграммы.)",
+                "Работа с цветами: есть встроенные методы, которые позволяют на основе цвета поля, сделать его темнее/светлее. (можно увидеть в примере кода)",
                 "Можно настроить дополнительные стили для полей (градиент, в точку и т.д.)",
                 "Есть встроенная сортировка",
             ],
-            disadventages: ["Некоторые сложности в настройке"],
+            disadventages: ["Некоторые сложности в настройке (изменение курсора при наведении)"],
             githubExample: "https://github.com/Moon1ight/pie-charts/blob/main/src/components/Nivo.jsx",
         },
         {
@@ -63,10 +67,11 @@ const ReactList = () => {
                 { title: "Визуализация пай-чарт", value: true },
                 { title: "Open-source", value: true },
                 { title: "Дизайн в объемном стиле", value: false },
-                { title: "Анимации / активный пай-чарт", value: true },
+                { title: "Анимации", value: false },
+                { title: "Активный пай-чарт", value: true },
             ],
-            adventages: ["Есть возможность сделать сегменты градиентом", "Интерактивность легенды", "Вывод суммы значений в центре"],
-            disadventages: ["Сложности с кастомизацией"],
+            adventages: ["Есть возможность сделать поля градиентом", "Интерактивность легенды", "Вывод суммы значений в центре"],
+            disadventages: ["Сложности с кастомизацией (нельзя установить промежуток между полями)"],
             githubExample: "https://github.com/Moon1ight/pie-charts/blob/main/src/components/ApexCharts.jsx",
         },
         {
@@ -79,10 +84,14 @@ const ReactList = () => {
                 { title: "Визуализация пай-чарт", value: true },
                 { title: "Open-source", value: true },
                 { title: "Дизайн в объемном стиле", value: false },
-                { title: "Анимации / активный пай-чарт", value: false },
+                { title: "Анимации", value: false },
+                { title: "Активный пай-чарт", value: true },
             ],
             adventages: ["Достаточно просто сделать кастомные подсказки"],
-            disadventages: ["Сложности с кастомизацией, приходится задавать собственные стили"],
+            disadventages: [
+                "Сложности с кастомизацией (Весьма ограничена, + приходится задавать собственные стили, чтобы изменить внешний вид)",
+                "Некрасивое выделение при клике",
+            ],
             githubExample: "https://github.com/Moon1ight/pie-charts/blob/main/src/components/Recharts.jsx",
         },
         {
@@ -95,13 +104,14 @@ const ReactList = () => {
                 { title: "Визуализация пай-чарт", value: true },
                 { title: "Open-source", value: true },
                 { title: "Дизайн в объемном стиле", value: false },
-                { title: "Анимации / активный пай-чарт", value: false },
+                { title: "Анимации", value: true },
+                { title: "Активный пай-чарт", value: false },
             ],
-            adventages: ["Интерактивность легенды", "Плюсы"],
+            adventages: ["Интерактивность легенды"],
             disadventages: [
-                "Сложности с кастомизацией",
+                "Сложности с кастомизацией (Весьма ограничена. Подробнее в пункте ниже)",
+                "Хоть и упрощает интеграцию Chart.js, может ограничить расширенную настройку, придется использовать сам Chart.js. (для более сложных визуальных решений) ",
                 "Неудобный формат данных",
-                "Хоть и упрощает интеграцию Chart.js, может ограничить расширенную настройку. (для более сложных визуальных решений) ",
             ],
             githubExample: "https://github.com/Moon1ight/pie-charts/blob/main/src/components/ReactChartjsTwo.jsx",
         },
@@ -115,10 +125,14 @@ const ReactList = () => {
                 { title: "Визуализация пай-чарт", value: true },
                 { title: "Open-source", value: true },
                 { title: "Дизайн в объемном стиле", value: false },
-                { title: "Анимации / активный пай-чарт", value: false },
+                { title: "Анимации", value: false },
+                { title: "Активный пай-чарт", value: false },
             ],
             adventages: ["Есть встроенная сортировка при указании «sortKey='y' sortOrder='y'>»"],
-            disadventages: ["Сложности с кастомизацией", "Неудобный формат данных"],
+            disadventages: [
+                "Сложности с кастомизацией (Весьма ограничена, неудобно изменять внешний вид диаграммы)",
+                "Неудобный формат данных",
+            ],
             githubExample: "https://github.com/Moon1ight/pie-charts/blob/main/src/components/Victory.jsx",
         },
         {
@@ -126,15 +140,19 @@ const ReactList = () => {
             title: "Plotly",
             installHref: "https://www.npmjs.com/package/plotly.js",
             librarySize: "8.95KB (3.19KB zipped)",
-            techStack: "React, JavaScript",
+            techStack: "React, Angular, Vue, JavaScriptt",
             libraryCriteria: [
                 { title: "Визуализация пай-чарт", value: true },
                 { title: "Open-source", value: true },
                 { title: "Дизайн в объемном стиле", value: false },
-                { title: "Анимации / активный пай-чарт", value: false },
+                { title: "Анимации", value: false },
+                { title: "Активный пай-чарт", value: false },
             ],
-            adventages: ["Преимуществ для проекта замечено не было"],
-            disadventages: ["Неудобный формат данных", "Сложности с кастомизацией"],
+            adventages: ["Преимуществ конкретно для проекта замечено не было"],
+            disadventages: [
+                "Сложности с кастомизацией (Весьма ограничена, нельзя сделать отступы между полями)",
+                "Неудобный формат данных",
+            ],
             githubExample: "https://github.com/Moon1ight/pie-charts/blob/main/src/components/Plotly.jsx",
         },
     ]
@@ -184,7 +202,6 @@ const ReactList = () => {
                                     - {adv}
                                 </div>
                             ))}
-                            {!item.disadventages?.length > 0 && <div>Недостатков не обнаружено</div>}
                         </div>
                         <div className='github-link'>
                             <a className='chart-link' href={item.githubExample} rel='noopener noreferrer' target='_blank'>

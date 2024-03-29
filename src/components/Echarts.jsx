@@ -48,6 +48,7 @@ export const Echarts = ({ colors }) => {
                     shadowOffsetX: 0,
                     shadowColor: "rgba(0, 0, 0, 0.5)",
                     emphasis: {
+                        // focus: "self",
                         shadowBlur: 10,
                         shadowOffsetX: 10,
                         shadowColor: "rgba(0, 0, 0, 0.5)",
@@ -65,11 +66,9 @@ export const Echarts = ({ colors }) => {
     function onChartReady(echarts) {
         console.log("echarts is ready", echarts)
     }
-
     function onChartClick(param, echarts) {
         console.log(param, echarts)
     }
-
     function onChartLegendselectchanged(param, echarts) {
         console.log(param, echarts)
     }

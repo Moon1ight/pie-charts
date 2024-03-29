@@ -39,7 +39,7 @@ export const Recharts = ({ colors }) => {
                 endAngle={-360}
             >
                 {data.map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={colors[index % colors.length]} cursor={"pointer"} />
+                    <Cell key={`cell-${index}`} fill={colors[index % colors.length]} className='recharts-cell' cursor={"pointer"} />
                 ))}
             </Pie>
             <Legend />

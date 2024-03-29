@@ -107,28 +107,6 @@ body {
 }
 
 
-
-
-
-/* Recharts styles */
-.recharts-tooltip {
-  border: 1px solid #dfdfdf;
-  background: #fff;
-  border-radius: 5px;
-  padding: 5px 10px;
-}
-
-.recharts-cell {
-  stroke-width: 2px;
-  stroke-opacity: 1;
-}
-.recharts-cell:hover {
-  /* background: red; */
-  fill: rgb(146, 146, 146);
-  box-shadow: 5px 5px 5px #000;
-}
-
-
 /* Медиа-запросы */
 @media (min-width: 1536px) {
   .chart-item {

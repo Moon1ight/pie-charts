@@ -1,0 +1,10 @@
+.recharts-tooltip {
+    border: 1px solid #dfdfdf;
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+ 
+  .recharts-cell:hover {
+    fill: rgb(146, 146, 146);
+  }

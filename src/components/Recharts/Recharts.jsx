@@ -1,5 +1,6 @@
-import React, { PureComponent } from "react"
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer, Legend, Tooltip } from "recharts"
+import React from "react"
+import { PieChart, Pie, Cell, Legend, Tooltip } from "recharts"
+import "./styles.css"
 
 const data = [
     { name: "css", value: 500 },
@@ -38,7 +39,7 @@ export const Recharts = ({ colors }) => {
                 endAngle={-360}
             >
                 {data.map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={colors[index % colors.length]} cursor={"pointer"} className='recharts-cell' />
+                    <Cell key={`cell-${index}`} fill={colors[index % colors.length]} cursor={"pointer"} />
                 ))}
             </Pie>
             <Legend />

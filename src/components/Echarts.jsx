@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import ReactECharts from "echarts-for-react"
 
 const data = [
@@ -23,7 +23,6 @@ export const Echarts = ({ colors }) => {
         legend: {
             orient: "horizontal",
             bottom: "bottom",
-            // data: ["css", "make", "hack", "c", "rust"],
         },
         series: [
             {
@@ -41,7 +40,6 @@ export const Echarts = ({ colors }) => {
                     formatter: "{b}\n{d}%",
                 },
                 labelLine: {
-                    // length: 30,
                     length2: 30,
                 },
                 itemStyle: {
@@ -49,10 +47,6 @@ export const Echarts = ({ colors }) => {
                     shadowBlur: 10,
                     shadowOffsetX: 0,
                     shadowColor: "rgba(0, 0, 0, 0.5)",
-                    // label: {
-                    //     show: false,
-                    //     position: "center",
-                    // },
                     emphasis: {
                         shadowBlur: 10,
                         shadowOffsetX: 10,
@@ -67,8 +61,6 @@ export const Echarts = ({ colors }) => {
             },
         ],
     }
-
-    const [count, setCount] = useState(0)
 
     function onChartReady(echarts) {
         console.log("echarts is ready", echarts)
@@ -86,7 +78,8 @@ export const Echarts = ({ colors }) => {
         <>
             <ReactECharts
                 option={option}
-                style={{ height: 310, width: 400 }}
+                opts={{ renderer: "svg" }}
+                style={{ height: 400, width: 400 }}
                 onChartReady={onChartReady}
                 onEvents={{
                     click: onChartClick,

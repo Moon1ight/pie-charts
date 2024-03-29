@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import { VictoryPie } from "victory"
 
 const data = [
@@ -30,7 +30,7 @@ export const Victory = ({ colors }) => {
                             return [
                                 {
                                     target: "data",
-                                    mutation: () => ({ style: { fill: "gold", width: 60 } }),
+                                    mutation: () => ({ style: { fill: "gold", stroke: "#000", strokeWidth: 1 } }),
                                 },
                                 {
                                     target: "labels",

@@ -8,7 +8,6 @@ export const Plotly = ({ colors }) => {
             labels: ["css", "make", "hack", "c", "rust"],
             type: "pie",
             hole: 0.6,
-            padding: 5,
         },
     ]
     const config = {

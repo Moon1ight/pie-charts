@@ -10,11 +10,11 @@ export const ReactChartjsTwo = ({ colors }) => {
         labels: ["css", "make", "hack", "c", "rust"],
         datasets: [
             {
-                // label: "Custom label",
+                label: "Информация",
                 data: [500, 270, 320, 250, 100],
                 backgroundColor: colors,
-                // borderColor: colors,
-                // borderWidth: 1,
+                borderRadius: 10,
+                borderWidth: 5,
             },
         ],
     }

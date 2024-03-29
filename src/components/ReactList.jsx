@@ -3,7 +3,7 @@ import { ApexCharts } from "./ApexCharts"
 import { Echarts } from "./Echarts"
 import { Nivo } from "./Nivo"
 import { ReactChartjsTwo } from "./ReactChartjsTwo"
-import { Recharts } from "./Recharts"
+import { Recharts } from "./Recharts/Recharts"
 import { Victory } from "./Victory"
 import { Plotly } from "./Plotly"
 
@@ -17,7 +17,7 @@ const ReactList = () => {
             title: "Echarts-for-react",
             installHref: "https://www.npmjs.com/package/echarts-for-react",
             librarySize: "7.93KB (2.82KB zipped)",
-            techStack: "React",
+            techStack: "React, JavaScript",
             libraryCriteria: [
                 { title: "Визуализация пай-чарт", value: true },
                 { title: "Open-source", value: true },
@@ -26,9 +26,9 @@ const ReactList = () => {
             ],
             adventages: [
                 "Очень гибкая кастомизация",
-                "Выглядит приятно даже до кастомизации",
+                "Сразу выглядит приятно",
                 "Интерактивность диаграммы и легенды",
-                "Небольшой размер библиотеки",
+                "Для отрисовки может использовать и SVG и Canvas",
             ],
             disadventages: [],
             githubExample: "https://github.com/Moon1ight/pie-charts/blob/main/src/components/Echarts.jsx",
@@ -58,7 +58,7 @@ const ReactList = () => {
             title: "ApexCharts React",
             installHref: "https://www.npmjs.com/package/react-apexcharts",
             librarySize: "5.34KB (2.19KB zipped)",
-            techStack: "React",
+            techStack: "React, Angular, Vue, JavaScript",
             libraryCriteria: [
                 { title: "Визуализация пай-чарт", value: true },
                 { title: "Open-source", value: true },
@@ -66,13 +66,13 @@ const ReactList = () => {
                 { title: "Анимации / активный пай-чарт", value: true },
             ],
             adventages: ["Есть возможность сделать сегменты градиентом", "Интерактивность легенды", "Вывод суммы значений в центре"],
-            disadventages: ["Минусы"],
+            disadventages: ["Сложности с кастомизацией"],
             githubExample: "https://github.com/Moon1ight/pie-charts/blob/main/src/components/ApexCharts.jsx",
         },
         {
             component: <Recharts colors={COLORS} />,
             title: "Recharts",
-            installHref: "https://recharts.org/en-US/guide/installation",
+            installHref: "https://www.npmjs.com/package/recharts",
             librarySize: "367.97KB (102.03KB zipped)",
             techStack: "React",
             libraryCriteria: [
@@ -82,7 +82,7 @@ const ReactList = () => {
                 { title: "Анимации / активный пай-чарт", value: false },
             ],
             adventages: ["Достаточно просто сделать кастомные подсказки"],
-            disadventages: ["Кастомизация весьма ограничена, приходится задавать собственные стили"],
+            disadventages: ["Сложности с кастомизацией, приходится задавать собственные стили"],
             githubExample: "https://github.com/Moon1ight/pie-charts/blob/main/src/components/Recharts.jsx",
         },
         {
@@ -99,7 +99,7 @@ const ReactList = () => {
             ],
             adventages: ["Интерактивность легенды", "Плюсы"],
             disadventages: [
-                "Кастомизация",
+                "Сложности с кастомизацией",
                 "Неудобный формат данных",
                 "Хоть и упрощает интеграцию Chart.js, может ограничить расширенную настройку. (для более сложных визуальных решений) ",
             ],
@@ -110,7 +110,7 @@ const ReactList = () => {
             title: "Victory",
             installHref: "https://www.npmjs.com/package/victory",
             librarySize: "171.84KB (57.53KB zipped)",
-            techStack: "React",
+            techStack: "React, React Native",
             libraryCriteria: [
                 { title: "Визуализация пай-чарт", value: true },
                 { title: "Open-source", value: true },
@@ -118,23 +118,23 @@ const ReactList = () => {
                 { title: "Анимации / активный пай-чарт", value: false },
             ],
             adventages: ["Есть встроенная сортировка при указании «sortKey='y' sortOrder='y'>»"],
-            disadventages: ["Ограниченная кастомизация", "Неудобный формат данных"],
+            disadventages: ["Сложности с кастомизацией", "Неудобный формат данных"],
             githubExample: "https://github.com/Moon1ight/pie-charts/blob/main/src/components/Victory.jsx",
         },
         {
             component: <Plotly colors={COLORS} />,
             title: "Plotly",
-            installHref: "https://plotly.com/javascript/is-plotly-free/",
+            installHref: "https://www.npmjs.com/package/plotly.js",
             librarySize: "8.95KB (3.19KB zipped)",
-            techStack: "React",
+            techStack: "React, JavaScript",
             libraryCriteria: [
                 { title: "Визуализация пай-чарт", value: true },
                 { title: "Open-source", value: true },
                 { title: "Дизайн в объемном стиле", value: false },
                 { title: "Анимации / активный пай-чарт", value: false },
             ],
-            adventages: ["Преимуществ замечено не было"],
-            disadventages: ["Неудобный формат данных", "Ограниченная кастомизация"],
+            adventages: ["Преимуществ для проекта замечено не было"],
+            disadventages: ["Неудобный формат данных", "Сложности с кастомизацией"],
             githubExample: "https://github.com/Moon1ight/pie-charts/blob/main/src/components/Plotly.jsx",
         },
     ]

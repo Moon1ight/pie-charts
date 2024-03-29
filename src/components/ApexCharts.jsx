@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import Chart from "react-apexcharts"
 
 export const ApexCharts = ({ colors }) => {
@@ -54,13 +54,6 @@ export const ApexCharts = ({ colors }) => {
             },
         },
         chart: {
-            // dropShadow: {
-            //     enabled: true,
-            //     top: 0,
-            //     left: 0,
-            //     blur: 3,
-            //     opacity: 0.5,
-            // },
             events: {
                 dataPointSelection: (event, chartContext, config) => {
                     console.log(config.w.config.labels[config.dataPointIndex])

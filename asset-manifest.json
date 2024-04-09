@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/pie-charts/static/css/main.83c64a25.css",
-    "main.js": "/pie-charts/static/js/main.045316f7.js",
+    "main.js": "/pie-charts/static/js/main.8b7eda30.js",
     "index.html": "/pie-charts/index.html",
     "main.83c64a25.css.map": "/pie-charts/static/css/main.83c64a25.css.map",
-    "main.045316f7.js.map": "/pie-charts/static/js/main.045316f7.js.map"
+    "main.8b7eda30.js.map": "/pie-charts/static/js/main.8b7eda30.js.map"
   },
   "entrypoints": [
     "static/css/main.83c64a25.css",
-    "static/js/main.045316f7.js"
+    "static/js/main.8b7eda30.js"
   ]
 }

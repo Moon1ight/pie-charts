@@ -1,6 +1,7 @@
 import React from "react"
 import { ApexCharts } from "./ApexCharts"
 import { Echarts } from "./Echarts"
+import { EchartsDrillDown } from "./EchartsDrillDown"
 import { Nivo } from "./Nivo"
 import { ReactChartjsTwo } from "./ReactChartjsTwo"
 import { Recharts } from "./Recharts/Recharts"
@@ -34,6 +35,29 @@ const ReactList = () => {
             ],
             disadventages: ["Недостатков не обнаружено"],
             githubExample: "https://github.com/Moon1ight/pie-charts/blob/main/src/components/Echarts.jsx",
+        },
+        {
+            component: <EchartsDrillDown colors={COLORS} />,
+            title: "Echarts-for-react (With drill-down)",
+            installHref: "https://www.npmjs.com/package/echarts-for-react",
+            librarySize: "7.93KB (2.82KB zipped)",
+            techStack: "React, Angular, Vue, JavaScript",
+            libraryCriteria: [
+                { title: "Визуализация пай-чарт", value: true },
+                { title: "Open-source", value: true },
+                { title: "Дизайн в объемном стиле", value: true },
+                { title: "Анимации", value: true },
+                { title: "Активный пай-чарт", value: true },
+            ],
+            adventages: [
+                "Очень гибкая кастомизация (Можно подробно настроить вид диаграммы, ее подписей, полей при наведении/клике на них)",
+                "При установке сразу выглядит приятно",
+                "Интерактивность диаграммы и легенды",
+                "Показывает процентное соотношение",
+                "Для отрисовки может использовать и SVG и Canvas",
+            ],
+            disadventages: ["Недостатков не обнаружено"],
+            githubExample: "https://github.com/Moon1ight/pie-charts/blob/main/src/components/EchartsDrillDown.jsx",
         },
         {
             component: <Nivo colors={COLORS} />,
@@ -71,7 +95,7 @@ const ReactList = () => {
                 { title: "Активный пай-чарт", value: true },
             ],
             adventages: ["Есть возможность сделать поля градиентом", "Интерактивность легенды", "Вывод суммы значений в центре"],
-            disadventages: ["Сложности с кастомизацией (нельзя установить промежуток между полями)"],
+            disadventages: ["Сложности с кастомизацией (нельзя установить промежуток между полями)", "Неудобный формат данных"],
             githubExample: "https://github.com/Moon1ight/pie-charts/blob/main/src/components/ApexCharts.jsx",
         },
         {
